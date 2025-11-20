@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@layer components {
+  .section { @apply min-h-screen w-full flex items-center justify-center relative overflow-hidden; }
+  .title { @apply text-7xl md:text-9xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400; }
+  .subtitle { @apply text-2xl md:text-4xl text-gray-400 max-w-4xl leading-relaxed; }
+}
+
+body { 
+  @apply bg-black text-white overflow-x-hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+canvas { image-rendering: crisp-edges; }
