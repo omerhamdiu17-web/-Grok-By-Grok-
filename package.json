@@ -1,0 +1,30 @@
+{
+  "name": "grok-by-grok",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "framer-motion": "^11.11.1",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.114.3",
+    "three": "^0.169.0",
+    "lenis": "^1.1.13",
+    "react-lenis": "^1.1.13",
+    "vanta": "^0.5.24"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/react": "^18",
+    "@types/node": "^20",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10"
+  }
+}
