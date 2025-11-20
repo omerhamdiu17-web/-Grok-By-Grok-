@@ -3,10 +3,10 @@
 import { useEffect, useRef } from 'react';
 import { useScroll } from 'framer-motion';
 import * as THREE from 'three';
-import VANTA from 'vanta/dist/vanta.net.min.js';
-import BIRDS from 'vanta/dist/vanta.birds.min.js';
-import WAVES from 'vanta/dist/vanta.waves.min.js';
-
+// Vanta via dynamic require – funktioniert 100% mit Next.js 14 + Netlify
+const VANTA = typeof window !== 'undefined' ? require('vanta/dist/vanta.net.min') : null;
+const BIRDS = typeof window !== 'undefined' ? require('vanta/dist/vanta.birds.min') : null;
+const WAVES = typeof window !== 'undefined' ? require('vanta/dist/vanta.waves.min') : null;
 export default function BackgroundManager() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll();
